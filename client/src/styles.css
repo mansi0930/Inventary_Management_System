@@ -1,0 +1,156 @@
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #f6f7fb;
+  padding: 30px;
+}
+
+/* ADD PRODUCT CARD */
+.add-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.add-card h4 {
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+/* INPUTS */
+.add-input {
+  border-radius: 8px !important;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  transition: 0.2s ease;
+}
+
+.add-input:focus {
+  border-color: #28c76f;
+  box-shadow: 0 0 4px rgba(40, 199, 111, 0.4);
+}
+
+/* BUTTON */
+.add-btn {
+  background: #28c76f;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  padding: 10px 0;
+  color: white;
+  transition: 0.2s ease;
+}
+
+.add-btn:hover {
+  background: #20b764;
+}
+
+.add-btn:active {
+  transform: scale(0.97);
+}
+
+/* TABLE WRAPPER (if used) */
+.table-wrapper {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.table th {
+  background: #f1f5f9;
+  border-bottom: 2px solid #e3e8ef;
+  font-weight: 600;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+/* ACTION BUTTONS */
+.btn-custom {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-edit {
+  background: #ffd465;
+}
+
+.btn-edit:hover {
+  background: #ffca4d;
+}
+
+.btn-delete {
+  background: #ff6b6b;
+  color: #fff;
+}
+
+.btn-delete:hover {
+  background: #ff4d4d;
+}
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-box {
+  width: 400px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.modal-box h5 {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.modal-box input {
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.btn-save {
+  background: #28c76f;
+  color: #fff;
+}
+
+.btn-save:hover {
+  background: #20b764;
+}
+
+.btn-cancel {
+  background: #d4d4d4;
+}
+
+.btn-cancel:hover {
+  background: #c2c2c2;
+}
